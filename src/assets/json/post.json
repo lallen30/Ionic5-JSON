@@ -1,0 +1,17 @@
+[
+  {
+    "id" : "1",
+    "title" : "post 1",
+    "content" : "<p>This is the content for the first post</p>"
+  },
+  {
+    "id" : "2",
+    "title" : "post 2",
+    "content" : "<p>This is the content for the second post</p>"
+  },
+  {
+    "id" : "3",
+    "title" : "post 3",
+    "content" : "<p>This is the content for the third post</p>"
+  }
+]

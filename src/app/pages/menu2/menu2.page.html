@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="light" text="" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Fetch Json from local json file</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label> ID </ion-label>
+    <ion-label> Title </ion-label>
+    <ion-label> Content </ion-label>
+  </ion-item>
+  <ion-list *ngFor="let post of posts">
+    <ion-item (click)="gotoPost(post.id)">
+      <ion-label> {{ post.id }} </ion-label>
+      <ion-label> {{ post.title }} </ion-label>
+      <ion-label [innerHTML]="post.content"></ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

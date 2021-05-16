@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="light" text="" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content [fullscreen]="true">
+      <ion-card (click)="goHome()">
+        <ion-card-header>
+          <ion-card-title>{{ post.title }}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content [innerHTML]="post.content">
+        </ion-card-content>
+      </ion-card>
+
+</ion-content>

@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'post/:id',
+    loadChildren: () => import('./pages/post/post.module').then( m => m.PostPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'menu2',
+    loadChildren: () => import('./pages/menu2/menu2.module').then( m => m.Menu2PageModule)
+  },
+  {
+    path: 'menu3',
+    loadChildren: () => import('./pages/menu3/menu3.module').then( m => m.Menu3PageModule)
+  },
 ];
 
 @NgModule({
